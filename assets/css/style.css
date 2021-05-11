@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(89, 116, 89);
+    margin: 0;
+}
+#principal{
+    padding-top: 50vh; 
+    padding-left: 35vw;
+}
+.btn{
+    text-align: left;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+}
+.btn-blue{
+    background-color: rgb(66, 128, 243);
+}
+.btn-white{
+    background-color: white;
+}
+.corpoA{
+    display: block;
+}
+.corpoD{
+    display: none;
+}
+#resp-final{
+    padding: 15px;
+}
+#percent{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+}

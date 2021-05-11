@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>a31 - Quiz</title>
+</head>
+<body>
+    <div class="container" id="principal">
+        <!--Criação do botão 'Iniciar Quiz' apontando para a abertura do modal-->
+        <button class="btn btn-primary" data-toggle="modal" data-target="#janela" id="btn-start" onclick="quiz1()">Iniciar Quiz</button>
+        <div class="modal fade" id="janela">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <!--Início das declarações do modal-->
+                <div class="modal-content modal-med">
+                    <!--Cabeçalho do modal-->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="titulo"></h5>
+                        <button class="close" data-dismiss="modal" onclick="finalizar()"><span>&times;</span></button>
+                    </div>
+                    <!--Corpo do modal-->
+                    <div class="modal-body corpoA" id="corpo">
+                        <p id="tQuestao"></p>
+                        <div>
+                            <button class="btn-block btn btn-white" id="btn-resp1" onclick="selecao(1)"></button>
+                        </div>
+                        <div>
+                            <button  class="btn-block btn btn-white" id="btn-resp2" onclick="selecao(2)"></button>
+                        </div>
+                        <div>
+                            <button  class="btn-block btn btn-white" id="btn-resp3" onclick="selecao(3)"></button>
+                        </div>
+                        <div>
+                            <button  class="btn-block btn btn-white" id="btn-resp4" onclick="selecao(4)"></button>
+                        </div>
+                    </div>
+                    <div id="resp-final"></div>
+                    <!--Rodapé do modal-->
+                    <div class="modal-footer">
+                        <div id="percent"></div>
+                        <button class="btn btn-primary corpoA" id="btn-next" onclick="confirm()">Confirmar</button>
+                        <button class="btn btn-primary corpoD" id="btn-fim" data-dismiss="modal" onclick="finalizar()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
